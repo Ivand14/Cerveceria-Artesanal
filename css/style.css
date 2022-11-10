@@ -403,3 +403,15 @@ main{
         font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width:480px){
+    .nosotros , .fabricacion , h2{
+        font-size: 2.3rem;
+    }
+    .nosotros{
+        padding-top: 2rem;
+    }
+    .nosotros h2{
+        text-decoration: underline;
+    }
+}
