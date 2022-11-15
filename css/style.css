@@ -8,7 +8,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: #161a1d ;
+    
     font-family:'Merienda', cursive ;
 }
 
@@ -20,6 +20,7 @@ h2{
     color: #bb3e03;
     font-size: 3.5rem;
     font-family: 'Merienda', cursive;
+    text-decoration: underline;
 }
 p{
     color: beige;
@@ -35,91 +36,109 @@ h4{
     font-size: 1.5rem;
 }
 /*header*/
-.contenedor{
-    background-image: url("../fotos/portada6.jpg");
+.contenedor-inicio{
+    background-image: url("../fotos/portada-inicio.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: none;
     max-width: 100%;
     height: 62.5rem;
-    background-size: cover;
-}
-.padre-header{
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(to top ,#000000c0,#1f2421);
-    height: 8rem;
 }
 
-.navegacion li{
-    list-style-type: none;
-    margin-right: 2.5rem;
+.navbar{
+    height: 7rem;
+    background-color: #000000 ;
 }
-.navegacion a{
-    text-decoration: none;
+
+.navbar-brand img{
+    height: 6.8rem;
+    width: auto;
+}
+.navbar-texto{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-texto a{
+    color: wheat;
+    font-size: 1.5rem;
+}
+.navbar-texto a:hover{
+    transition: all 1s;
     color: #bb3e03;
 }
-.navegacion :hover{
-    background-color: rgba(0, 0, 0, 0.76);
-    background-size: cover;
-    transition: 0.8s ease-out;
-    border-radius: 0.8rem;
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #bb3e03;
 }
-.texto-inicio{
+.navbar-toggler{
+    color: #d9cab3;
+}
+
+.texto-main h2{
     display: flex;
+    align-content: center;
     justify-content: start;
-    margin-left: 1rem;
+    margin: 15rem 10rem 2rem;
 }
-
-.navegacion{
-    display: flex;
-    margin-top:  2rem;
-    font-size: 2rem;
+.texto-main p{
+    margin: 2rem 2rem;
+    flex-wrap: wrap;
 }
-.texto-inicio h2{
-    font-size:2rem;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-}
-.texto-principal h1{
-    margin-top: 11rem;
-    font-size: 6rem;
-
-    animation:bounce;
-    animation-duration: 2s;
+.animate__fadeIn{
+    animation-duration: 1s;
+    animation-delay: 0.3s
 }
 
 /*Nosotros*/
 .nosotros , .fabricacion, h2{
     text-align: center;
-    padding: 1rem 0rem 0.5rem 0rem;
+    margin: 2rem 1.3rem 0 0rem;
     
 }
 .nosotros p{
     text-align: center;
     margin-top: 1rem;
 }
-
-.staff{
+.imagenes-staff{
     display: flex;
-    justify-content: space-evenly ;
-    height: 9rem;
+    justify-content: space-around;
+    margin: 4rem;
+    flex-wrap: wrap;
+}
+.staff1 p{
+    position:relative;
+    font-size: 1.2rem;
+    bottom: 8rem;
+    left: 1.3rem;
+    color:#bb3e03;
+    opacity: 0;
 }
 .staff img{
-    border-radius: 50%;
+    border-radius: 2rem;
+    height: 20rem;
+    width: 24rem;
+    align-content: space-around;
+    margin: 3rem 3rem;
 }
-.fabricacion p{
-    padding: 0rem 0rem 1.5rem; 
+.contenedor-staff1{
+    overflow: hidden;
 }
-.fabricacion-img{
-    display: flex;
-    justify-content: space-evenly;
-    
+/*CARRUSEL FABRICACION*/
+.carrusel-fabricacion{
+    width: 29%;
+    margin: 0rem 0rem 5rem 48rem;
 }
-.fabricacion-img img{
-    height: 17rem;
-    width: 17rem;
-    margin-bottom: 1rem;
+.carrusel-fabricacion img{
+    height: 41rem;
+}
+/*ANIMACION STAFF*/
+.staff{
+    transition: all 1s;
+}
+.imagenes-staff img{
+    transition: all 300ms;
+}
+.imagenes-staff img:hover{
+    transform: scale(1.25);
 }
 
 
@@ -177,6 +196,8 @@ main{
     grid-area: texto1;
     display: flex;
     justify-content: space-between;
+    text-decoration: underline;
+    color: #bb3e03;
 }
 .menu-texto2{
     grid-area: texto2;
@@ -184,8 +205,10 @@ main{
 
 .img-tradicionales{
     grid-area: tradicionales;
-    display: flex;
-    justify-content: space-evenly;
+    height: 30rem;
+    width: 32rem;
+    margin:5rem 0 5rem 46rem;
+    
 }
 
 .especiales{
@@ -195,13 +218,18 @@ main{
     grid-area: img-especiales;
     display: flex;
     justify-content: space-evenly;
+    height: 30rem;
+    width: 32rem;
+    margin:5rem 0 5rem 46rem;
 }
-
+.ventas{
+    margin: 2rem;
+}
 .ventas h3{
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 .ventas p{
-    margin: 1rem 5.2rem;
+    margin-left: 2rem;
 }
 .ventas img{
     height: 17rem;
@@ -209,27 +237,63 @@ main{
     margin: 1.5rem 1.5rem;
 }
 
-.img-recarga{
-    display: flex;
-    justify-content: space-evenly;
+.img-recarga img{
+    height: 30rem;
+    width: 32rem;
+}
+.img-recarga h5{
+    color:beige;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 28rem;
+    right: 14rem;
+    font-size: 1.8rem;
+}
+.img-recarga ul{
+    color: beige;
+    position: relative;
+    bottom: 27rem;
+    left: 40rem;
+    font-size: 1.5rem;
 }
 
-.imagen-lata{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 2rem;
+.comida h2{
+    text-decoration: underline;
+    color: #bb3e03;
 }
-.img-comida{
+.card-menu{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
+.card {
+    background-color: black;
+    margin-bottom: 5rem;
+    display: flex;
+    width: 20rem;
+}
+.card img{
+    border-radius: .4rem;
+    margin: 1.2rem 1.5rem;
+    height: 20rem;
+    width: 25rem;
+}
+.card p{
+    font-size: 1.2rem;
+    margin: 0rem 2rem;
+    text-align: justify;
+}
+
+
 /*ubicacion*/
 
 .ubicacion-fondo{
     background-image: url('../fotos/ubicacion.jpg');
     background-repeat: none;
     background-size: cover;
+    background-attachment: fixed;
     max-width: 100%;
     overflow: hidden;
 }
@@ -242,6 +306,7 @@ main{
     "ubicacion ubicacion ubicacion";
 
     grid-template-columns: repeat(3,1fr);
+    margin: 2rem 1rem;
 }
 .texto1-ubicacion{
     grid-area: texto;
@@ -249,6 +314,7 @@ main{
     justify-content: center;
     text-decoration: underline;
     color: #bb3e03;
+    margin-top: 7rem;
 }
 .horarios{
     grid-area: horario;
@@ -293,6 +359,7 @@ main{
     background-repeat: none;
     background-size: cover;
     max-width: 100%;
+    height: 62.5rem;
     overflow: hidden;
 }
 .contacto{
@@ -305,10 +372,13 @@ main{
     border: #bb3e03 0.3rem solid;
     border-radius: 0.3rem;
     background-color: rgba(0, 0, 0, 0.719);
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     font-size: 2rem;
-    margin: 4rem;
+}
+.formulario :focus{
+    background: #0c0f0a;
+    color: #bb3e03;
 }
 .texto-contacto{
     text-align: center;
@@ -338,7 +408,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     color: beige;
-    background-color: hwb(0 11% 89% / 0.6);
+    background-color: #141619;
     
 }
 .redes{
@@ -351,67 +421,104 @@ main{
     width: 3rem;
     margin-right: 1.5rem;
 }
-
+.redes img{
+    transition: all 300ms;
+}
+.redes img:hover{
+    transform: scale(1.25);
+}
 /*Media queries*/
 
 /*INDEX*/
-
-@media screen and (max-width:1020px){
-    .navegacion li{
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width:768px){
-    main{
-        margin: 15rem 0 0 7rem ;
-    }
-    .padre-header{
-        flex-direction: column;
-    }
-    .navegacion{
-        justify-content: space-around;
+@media screen and (max-width:886px){
+    .navbar-toggler{
+        filter: invert(1);
         
     }
-    .texto-inicio {
+    .redes{
+        display: none;
+    }
+    .navbar-brand img{
+        height: 6rem;
+    }
+    .navbar-texto{
+        background-color: #000000ce;
         display: flex;
         justify-content: center;
     }
-    .texto-principal h1{
-        margin-top: 0;
+    .texto-main h2 {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        margin: 17rem 7rem 2rem;
     }
+    .texto-main p {
+        margin: 2rem 7rem;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+    }
+    
 }
 
-@media screen and (max-width:480px){
-    .navegacion{
-        margin-left: 1.2rem;
+@media screen and (max-width:358px){
+    .contenedor-inicio{
+        background-image: url("../fotos/fondo-responsiveinicio.png");
+    }
+    .texto-main h2 {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        margin: 25rem 7rem 2rem;
+    }
+    .texto-main p {
+        margin: 1rem 2rem;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        justify-content: center;
     }
 }
-/*NOSOTROS*/
-
-@media screen and (max-width:1020px){
-    #nosotros-contenido{
-        margin: 2rem;
+@media screen and (max-width:314px){
+    .texto-main h2 {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        margin: 27rem 7rem 2rem;
+        font-size: 2rem;
     }
-    .derechos h4{
-        font-size: 1rem;
+    .texto-main p {
+        margin: 1rem 2rem;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        justify-content: center;
     }
 }
-
-@media screen and (max-width:768px){
-    .derechos h4{
-        font-size: 0.9rem;
+@media screen and (max-width:232px){
+    .texto-main h2 {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        margin: 26rem 1rem 2rem;
+        font-size: 2rem;
+    }
+    .texto-main p {
+        margin: 1rem 2rem;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        justify-content: center;
     }
 }
-
-@media screen and (max-width:480px){
-    .nosotros , .fabricacion , h2{
-        font-size: 2.3rem;
+@media screen and (max-width:136px){
+    .texto-main h2 {
+        display: flex;
+        align-content: center;
+        justify-content: start;
+        margin: 26rem 0rem 2rem;
+        font-size: 2rem;
     }
-    .nosotros{
-        padding-top: 2rem;
-    }
-    .nosotros h2{
-        text-decoration: underline;
+    .texto-main p {
+        margin: 1rem 4rem;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        justify-content: center;
     }
 }

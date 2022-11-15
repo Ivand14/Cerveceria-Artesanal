@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--CSS PROPIO-->
     <link href="../css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../fotos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Courgette&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Pirca</title>
 </head>
 <body>
     <!--BACKGORUND-IMAGE-->
     <div class="menu-fondo">
     <!--BARRA DE NAVEGACION-->
-    <header class="padre-header">
-        <div class="texto-inicio">
-            <h2>
-                PIRCA 
-                <br>
-                Cerveceria Artesanal
-            </h2>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+          <a class="navbar-brand titulo-navbar" href="./index.html"><img src="../fotos/logo-pirca.png" alt="logo-pirca"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-texto" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link " aria-current="page" href="../index.html">INICIO</a>
+              <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              <a class="nav-link active" href="../pages/menu.html">MENÚ</a>
+              <a class="nav-link" href="../pages/ubicacion.html">UBICACIÓN</a>
+              <a class="nav-link" href="../pages/contacto.html" >CONTACTO</a>
+            </div>
+          </div>
         </div>
-        <nav>
-            <ul class="navegacion">
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="../pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="../pages/menu.html">MENÚ</a>
-                </li>
-                <li>
-                    <a href="../pages/ubicacion.html">UBICACIÓN</a>
-                </li>
-                <li>
-                    <a href="../pages/ubicacion.html">CONTACTO </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="redes">
+          <a href="https://www.instagram.com/pirca_cerveceria_artesanal/?hl=es" target="_blank"><img src="../iconos/instagram.png" alt="ig"></a>
+          <a href="https://www.facebook.com/PircaCerveceriaArtesanal/?ref=page_internal" target="_blank"><img src="../iconos/facebook.png" alt="fb"></a>
+      </div>
+      </nav>
+    </header>
     </header>
 <!--CONTENIDO DEL MENU-->
-<section class="seccion-pintas">
 
-    <section class="pintas">
+<section class="pintas">
         <div class="menu-texto1">
             <h2>NUESTRAS CERVEZAS</h2>
         </div>
@@ -55,12 +54,26 @@
                 El carácter de las Pircas tradicionales es así: fuerte como nuestras costumbres y cautivante como nuestras montañas. 🏔️🍺
             </p>
         </div>
-
         <div class="img-tradicionales">
-            <img src="../fotos/pirca-tradicional.jpg" alt="tradicional">
-            <img src="../fotos/tradicionales.jpg" alt="prc">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../fotos/pirca-tradicional.jpg" class="d-block w-100" alt="tradicional">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../fotos/tradicionales.jpg" class="d-block w-100" alt="tradicionales">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-    
     
         <div class="especiales">
             <h3>ESPECIALES</h3>
@@ -70,12 +83,28 @@
         </div>
 
         <div class="img-especiales">
-            <img src="../fotos/especiales-prc.jpg" alt="especialprc">
-            <img src="../fotos/especiales.jpg" alt="especial">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../fotos/especiales-prc.jpg" class="d-block w-100" alt="especiales-prc">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../fotos/especiales.jpg" class="d-block w-100" alt="especiales">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
-    </section>
 </section>
+
 
 <seccion class="ventas">
     <section class="botellon">
@@ -89,56 +118,72 @@
         </div>
 
         <div class="img-recarga">
-            <img src="../fotos/botellon.jpg" alt="botellon1">
-            <img src="../fotos/descarga.png" alt="botellon2">
+            <img src="../fotos/botellon.jpg" alt="botellon">
+            <h5>Veni y recarga tu botellon de 20hs a 23hs</h5>
+            <ul>
+                <li>
+                    Botellon de 1.9L
+                </li>
+                <li>
+                    Todas las variedades disponibles
+                </li>
+                <li>
+                    Happy hour de 21hs a 22:30hs
+                </li>
+            </ul>
         </div>
 
-    </section>
+</section>
 
-    <section class="latas">
 
-        <div class="latas">
-
-            <div class="texto-latas">
-                <h3>LLEVA TUS LATAS PIRCA</h3>
-            </div>
-
-            <div class="parrafo-lata">
-                <p>Te dicen que en 15 te pasan a buscar para ir a un asado y vos estás más que listx 🍻😎 Qué importante tener unas latas de Pirca para casos de emergencia 😁</p>
-            </div>
-
-            <div class="imagen-lata">
-                <img src="../fotos/lata0.jpg" alt="lata0">
-                <img src="../fotos/lata1.jpg" alt="lata1">
-                <img src="../fotos/lata2.jpg" alt="lata2">
-                <img src="../fotos/lata3.jpg" alt="lata3">
-                <img src="../fotos/lata3.jpg" alt="lata3">
-                <img src="../fotos/lata4.jpg" alt="lata4">
-            </div>
-
-        </div>
-    </section>
-
-    <section id="comida">
+<section id="comida">
         <div class="comida">
             <h2>MORFI</h2>
             <p>No es lo mismo el otoño en Mendoza ni la billetera un 31 💸😬 Por eso te esperamos con las promos de siempre 👌🏻 Chusmealas nuestras redes sociales</p>
         </div>
         
-        <div class="img-comida">
-            <img src="../fotos/morfi1.jpg" alt="morfi1">
-            <img src="../fotos/morfi2.jpg" alt="morfi2">
-            <img src="../fotos/morfi3.jpg" alt="morfi3">
-            <img src="../fotos/morfi4.jpg" alt="morfi4">
+        <div class="card-menu">
+            <div class="card" style="width: 28rem;">
+                <img src="../fotos/morfi1.jpg" class="card-img-top" alt="morfi1">
+                <div class="card-body">
+                  <p class="card-text"> pizza con rucula y jamon crudo + una pinta de regalo</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 28rem;">
+                <img src="../fotos/morfi2.jpg" class="card-img-top" alt="morfi2">
+                <div class="card-body">
+                  <p class="card-text">Sanguche de cerdo desmechado + papas</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 28rem;">
+                <img src="../fotos/morfi3.jpg" class="card-img-top" alt="morfi3">
+                <div class="card-body">
+                  <p class="card-text">Hamburguesa con papas + pinta</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 28rem;">
+                <img src="../fotos/morfi4.jpg" class="card-img-top" alt="morfi4>
+                <div class="card-body">
+                  <p class="card-text">Papas rusticas con cebolla de verdeo y jamon</p>
+                </div>
+              </div>
+
         </div>
-    </section>
+</section>
 </seccion>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 <!--FOOTER-->
     <footer class="footer">
         <div class="redes">
-            <a href="https://www.instagram.com/pirca_cerveceria_artesanal/?hl=es" target="_blank"><img src="../iconos/instagram.png" alt="ig"></a>
-            <a href="https://www.facebook.com/PircaCerveceriaArtesanal/?ref=page_internal" target="_blank"><img src="../iconos/facebook.png" alt="fb"></a>
+          <a href="https://api.whatsapp.com/send?phone=542617040456" target="_blank"><img src="../iconos/whatsapp.png" alt="wsp"></a>
         </div>
         <div class="derechos">
             <h4>BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS. NO COMPARTA EL CONTENIDO CON MENORES. 2022 PIRCA CERVECERIA ARTESANAL©</h4>
