@@ -385,7 +385,7 @@ h4{
 }
 .derechos h4{
     font-size: 1.3rem;
-    margin: 2rem 2rem;
+    margin: 0.1rem 2rem;
 }
 /*Media queries*/
 
@@ -801,5 +801,26 @@ h4{
     }
     h2{
         margin: 0rem 2rem;
+    }
+ }
+
+/*UBICACION*/
+ @media screen and (max-width:992px){
+    .redes{
+        display: none;
+    }
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .navbar img{
+        height: 6rem;
+    }
+ }
+ @media screen and (max-width:992px){
+    .texto1-ubicacion h2{
+        font-size: 2rem;
+    }
+    .horarios p{
+        font-size: 1.7rem;
     }
  }
