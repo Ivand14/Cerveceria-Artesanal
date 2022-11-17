@@ -102,6 +102,11 @@ h4{
     animation-duration: 1s;
     animation-delay: 0.3s
 }
+.contactanos{
+    display: flex;
+    justify-content: center;
+    width: 57rem;
+}
 
 /*Nosotros*/
 .nosotros , .fabricacion, h2{
@@ -197,7 +202,7 @@ h4{
     "comida comida comida";
     grid-template-columns: repeat(3,1fr);
     margin: 2rem 4rem;
-    gap: 5rem;
+    gap: 7rem;
 }
 .pintas{
     grid-area: pintas;
@@ -223,20 +228,13 @@ h4{
 .card img{
     height: 28rem;
 }
-.carousel{
-    position: relative;
-    left: 46rem;
+
+.contenedor-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
-.img-tradicionales div{
-    height: 29rem;
-    width: 30rem;
-    
-}
-.img-especiales div{
-    height: 29rem;
-    width: 30rem;
-    
-}
+
 /*ubicacion*/
 
 .ubicacion-fondo{
@@ -252,8 +250,7 @@ h4{
     grid-template-areas: 
     "texto texto texto"
     "horario horario horario"
-    "mapa mapa mapa"
-    "ubicacion ubicacion ubicacion";
+    "mapa mapa mapa";
 
     grid-template-columns: repeat(3,1fr);
     margin: 2rem 1rem;
@@ -278,44 +275,17 @@ h4{
     justify-content: center;
     margin: 2rem 2rem;
 }
-.ubicacion{
-    grid-area: ubicacion;
-    display:flex;
-    justify-content: end;
-}
-.ubicacion img{
-    height: 6rem;
-}
-.ubicacion1 img{
-    margin-left: 11rem;
-}
-.ubicacion2 img{
-    margin-left: 6.5rem;
-}
-.ubicacion3 img{
-    margin-left: 13rem;
-}
-.ubicacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-}
 
 /*contacto*/
 
 .contacto-padre{
-    background-image: url('../fotos/fondocontacto.jpg');
-    background-repeat: none;
-    background-size: cover;
-    max-width: 100%;
-    height: 62.5rem;
-    overflow: hidden;
+    background-color: #000000;
+    height: 63rem;
 }
 .contacto{
     display: flex;
-    margin: 5rem 2rem;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario{
@@ -323,7 +293,7 @@ h4{
     border-radius: 0.3rem;
     background-color: rgba(0, 0, 0, 0.719);
     width: 35rem;
-    height: 35rem;
+    height: 31rem;
     font-size: 2rem;
 }
 .formulario :focus{
@@ -643,164 +613,48 @@ h4{
 }
 
 /*MENU*/
- @media screen and (max-width:1075px){
-    .carousel{
-        position: relative;
-        left: 31rem;
-    }
- }
- @media screen and (max-width:961px){
-    .carousel{
-        position: relative;
-        left: 25rem;
-    }
-    .navbar img{
-        height: 6rem;
-    }
-    .menu-texto1{
-        margin-bottom: 4rem;
-    }
- }
- @media screen and (max-width:803px){
-    .carousel{
-        position: relative;
-        left: 21rem;
-    }
-    .navbar img{
-        height: 6rem;
-    }
-    .menu-texto1{
-        margin-bottom: 4rem;
-        
-    }
-    .card-menu{
-        flex-direction: column;
-    }
- }
- @media screen and (max-width:717px){
-    .carousel{
-        position: relative;
-        left: 15rem;
-    }
-    .navbar img{
-        height: 6rem;
-    }
-    .menu-texto1{
-        margin-bottom: 4rem;
-        
-    }
-    .card-menu{
-        flex-direction: column;
-    }
- }
- @media screen and (max-width:597px){
-    .carousel{
-        position: relative;
-        left: 12rem;
-    }
-    .navbar img{
-        height: 6rem;
-    }
-    .menu-texto1{
-        margin-bottom: 4rem;
-        
-    }
-    .img-tradicionales div{
-        height: 18rem;
-        width: 20rem;
-        
-    }
-    .img-especiales div{
-        height: 18rem;
-        width: 20rem;
-        
-    }
-    h2{
-        font-size: 2rem;
+@media  screen and (max-width:1075px) {
+    .menu-texto1 h2{
+        margin-bottom: 2rem;
     }
     h3{
         font-size: 1.8rem;
     }
     p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
- }
+    .carousel{
+        margin-left: 32rem;
+    }
 
- @media screen and (max-width:467px){
+ }
+ @media  screen and (max-width:1005px) {
+    .menu-texto1 h2{
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
     .carousel{
-        position: relative;
-        left: 7rem;
+        margin-left: 32rem;
+        height: 20rem;
+        width: 22rem;
     }
  }
- @media screen and (max-width:467px){
-    .carousel{
-        position: relative;
-        left: 6rem;
-    }
-    .img-tradicionales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
-    .img-especiales div{
-        height: 14rem;
-        width: 16rem;
-        
+ @media  screen and (max-width:993px) {
+    .redes{
+        display: none;
     }
  }
-
- @media screen and (max-width:467px){
+ @media  screen and (max-width:919px) {
+    
     .carousel{
-        position: relative;
-        left: 2rem;
-    }
-    .img-tradicionales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
-    .img-especiales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
- }
- @media screen and (max-width:251px){
-    .carousel{
-        position: relative;
-        left: -1rem;
-    }
-    .img-tradicionales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
-    .img-especiales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
- }
- @media screen and (max-width:185px){
-    .carousel{
-        position: relative;
-        left: -2rem;
-    }
-    .img-tradicionales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
-    .img-especiales div{
-        height: 14rem;
-        width: 16rem;
-        
-    }
-    .menu-texto1{
-        text-align: center;
-    }
-    h2{
-        margin: 0rem 2rem;
+        margin: 2rem 0 0 29rem ;
+        height: 20rem;
+        width: 22rem;
     }
  }
 
@@ -816,11 +670,150 @@ h4{
         height: 6rem;
     }
  }
- @media screen and (max-width:992px){
-    .texto1-ubicacion h2{
-        font-size: 2rem;
+ 
+ @media screen and (max-width:797px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "horario "
+        "mapa"
+        "ubicacion ";
+    
+        grid-template-columns: repeat(1,1fr);
+        margin: 2rem 1rem;
     }
-    .horarios p{
+    
+ }
+ @media screen and (max-width:797px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto texto"
+        "horario horario"
+        "mapa mapa"
+        "ubicacion ubicacion ";
+    
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem 4rem;
+    }
+    .texto1-ubicacion{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+    .horarios{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+    .mapa iframe{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        width: 45rem;
+    }
+    
+ }
+
+ @media screen and (max-width:600px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto texto"
+        "horario horario"
+        "mapa mapa"
+        "ubicacion ubicacion ";
+    
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem 4rem;
+    }
+    h2{
         font-size: 1.7rem;
     }
+    p{
+        font-size: 1.3rem;
+    }
+    .texto1-ubicacion{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        
+    }
+
+    .horarios{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+    .mapa iframe{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        width: 45rem;
+    }
+    
  }
+ @media screen and (max-width:379px){
+    .mapa iframe{
+        display: flex;
+        flex-direction: column;
+        margin: 0 8rem;
+        width: 25rem;
+    }
+    .texto1-ubicacion h2{
+        font-size: 1.4rem;
+
+    }
+    .horarios p{
+        font-size: 1rem;
+    }
+ }
+ @media screen and (max-width:253px){
+    .mapa iframe{
+        display: flex;
+        flex-direction: column;
+        margin: 0 12rem;
+        width: 20rem;
+    }
+ }
+
+ /*CONTACTO*/
+
+ @media screen and (max-width:1010px) {
+    h2{
+        font-size: 2rem;
+    }
+    .contenido h5{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .contenido  label{
+        font-size: 1.2rem;
+        
+    }
+    .contenido input{
+        height: 2rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+   textarea{
+        width: 10rem;
+    }
+    .bton input{
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .formulario{
+        width: 22rem;
+        
+    }
+ }
+
+@media screen and (max-width:300px){
+    .contacto-padre{
+        height: 69rem;
+    }
+}
