@@ -104,8 +104,7 @@ h4{
     animation-delay: 0.3s
 }
 .btn{
-    background-color: #000000;
-    border: #bb3e03 solid 0.1rem;
+    
 }
 .btn:hover{
     background-color: #bb3e03;
