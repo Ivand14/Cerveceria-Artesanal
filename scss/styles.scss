@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ h2{
     font-size: 3.5rem;
     font-family: 'Merienda', cursive;
     text-decoration: underline;
-    
 }
 p{
     color: beige;
@@ -225,7 +223,6 @@ h4{
 }
 .pintas h2{
     margin-right: 4rem;
-    margin-bottom: 3rem;
 }
 .pintas-especiales{
     grid-area: especiales;
@@ -385,26 +382,22 @@ h4{
 /*Media queries*/
 
 /*INDEX*/
-@media (max-width:1010px) and (min-width:531px){
+@media (max-width:1010px) and (min-width:712px){
     .texto-main h2{
-        text-align: center;
-        margin-left: 6rem;
-        font-size: 2.2rem;
-        
+        margin-right:10rem;
     }
     .texto-main p{
         margin-bottom: 2rem;
     }
     .boton-main{
-        margin-left: 20rem;
+        margin-left: 32rem;
     }
     .navbar-collapse{
         background-color: #000000;
         z-index: 1;
-        justify-content: center;
     }
 }
-@media (max-width: 534px) and (min-width: 264px){
+@media (max-width: 534px) and (min-width: 180px){
     .contenedor-inicio{
         background-image: url('../fotos/fondo-cel.jpg');
     }
@@ -414,20 +407,7 @@ h4{
         z-index: 1;
     }
 }
-@media (max-width: 263px) and (min-width: 187px){
-    .contenedor-inicio{
-        background-image: url('../fotos/fondo-cel.jpg');
-    }
-    
-    .navbar-collapse{
-        background-color: #000000;
-        z-index: 1;
-    }
 
-    .texto-main p{
-        font-size: 1.3rem;
-    }
-}
 
 /*NOSOTROS*/
 @media screen and (max-width:986px){
@@ -548,13 +528,51 @@ h4{
 }
 
 /*MENU*/
-
+@media  screen and (max-width:1075px) {
+    .texto-main h2{
+        text-align: center;
+        margin-left: 5rem;
+    }
+    .texto-main p{
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+    .boton-main{
+        margin-left: 17rem;
+    }
+}
 @media  screen and (max-width:992px) {
     .redes-nav{
         display: none;
     }
 }
-
+@media (max-width:1010px) and (min-width:531px) {
+    .contenedor-inicio{
+        background-size: cover;
+    }
+    .texto-main h2{
+        text-align: center;
+        margin-left: 13rem;
+        font-size: 2.2rem;
+    }
+    .texto-main p{
+        margin-left: 4rem;
+        font-size: 1.6rem;
+        width: auto;
+    }
+    .boton-main{
+        margin-left: 19rem;
+    }
+   
+    
+}
+@media (max-width:534px) and (min-width:168px) {
+    .contenedor-inicio{
+        background-image: url('../fotos/fondo-celu.png');
+        background-size: cover;
+    }
+    
+}
 
 /*UBICACION*/
  @media screen and (max-width:992px){
