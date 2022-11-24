@@ -1,80 +1,83 @@
 /*header*/
-.contenedor-inicio{
-    background-image: url("../fotos/fondo-inicio.jpg");
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: none;
-    max-width: 100%;
-    height: 69.4rem;
+.contenedor-inicio {
+  background-image: url("../fotos/fondo-inicio.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: none;
+  max-width: 100%;
+  height: 69.4rem;
 }
 
-.navbar{
-    height: 7rem;
-    background-color: #000000 ;
+.navbar {
+  height: 7rem;
+  background-color: #000000;
 }
 
-.navbar-brand img{
-    height: 6.8rem;
-    width: auto;
+.navbar-brand img {
+  height: 6.8rem;
+  width: auto;
 }
-.navbar-texto{
-    display: flex;
-    justify-content: space-around;
+.navbar-texto {
+  display: flex;
+  justify-content: space-around;
 }
-.navbar-texto a{
-    color: wheat;
-    font-size: 1.5rem;
+.navbar-texto a {
+  color: wheat;
+  font-size: 1.5rem;
 }
-.navbar-texto a:hover{
-    transition: all 1s;
-    color: #bb3e03;
+.navbar-texto a:hover {
+  transition: all 1s;
+  color: #bb3e03;
 }
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: #bb3e03;
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #bb3e03;
 }
-.navbar-toggler{
-    color: #d9cab3;
+.navbar-toggler {
+  color: #d9cab3;
 }
-.redes-nav{
-    display: flex;
-    justify-content: center;
-    margin: 1rem 1rem;
+.redes-nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
 }
-.redes-nav img{
-    height: 3rem;
-    width: 3rem;
-    margin-right: 1.5rem;
+.redes-nav img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1.5rem;
 }
-.redes-nav img{
-    transition: all 300ms;
+.redes-nav img {
+  transition: all 300ms;
 }
-.redes-nav img:hover{
-    transform: scale(1.25);
+.redes-nav img:hover {
+  transform: scale(1.25);
 }
-.texto-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 10rem 1rem 0 1rem;
+.texto-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 1rem 0 1rem;
 }
-.texto-main h2{
-    margin-bottom: 2rem;
+.texto-main h2 {
+  @include letras;
 }
-.animate__fadeIn{
-    animation-duration: 1s;
-    animation-delay: 0.3s
+.animate__fadeIn {
+  animation-duration: 1s;
+  animation-delay: 0.3s;
 }
-.btn{
-    @include boton-color;
+.btn {
+    background-color: #000000;
+    border: solid #000000 1rem;
+    font-size: 1.7rem;
 }
-.btn:hover{
-    background-color: #bb3e03;
-    border: #bb3e03 solid 0.1rem;
+.btn:hover {
+  background-color: #bb3e03;
+  border: #bb3e03 solid 0.1rem;
 }
-.boton-main{
-    display: flex;
-    justify-content: center;
-    margin:0 15rem;
-    width: auto;
+.boton-main {
+  display: flex;
+  justify-content: center;
+  margin: 0 15rem;
+  width: auto;
 }

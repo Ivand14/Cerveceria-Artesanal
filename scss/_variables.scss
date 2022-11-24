@@ -1,5 +1,10 @@
+$font-family: "Merienda", cursive;
+$color-principal: #bb3e03;
+$font-size-h2: 3.5rem;
+$color-secundario: beige;
+$font-size-p: 2rem;
+$font-size-h3: 2.5rem;
+$font-size-h4: 1.5rem;
+
+
 /*BOTON INICIO*/
-@mixin boton-color {
-  background-color: #000000;
-  border: #bb3e03 solid 0.1rem;
-}

@@ -104,11 +104,13 @@ h4{
     animation-delay: 0.3s
 }
 .btn{
-    
+    background-color: #000000;
+    border: solid #000000 1rem;
+    font-size: 1.7rem;
 }
 .btn:hover{
     background-color: #bb3e03;
-    border: #bb3e03 solid 0.1rem;
+    border: #bb3e03 solid 1rem;
 }
 .boton-main{
     display: flex;
