@@ -60,24 +60,11 @@
   margin: 10rem 1rem 0 1rem;
 }
 .texto-main h2 {
-  @include letras;
+  margin-bottom: 2rem;
 }
 .animate__fadeIn {
   animation-duration: 1s;
   animation-delay: 0.3s;
 }
-.btn {
-    background-color: #000000;
-    border: solid #000000 1rem;
-    font-size: 1.7rem;
-}
-.btn:hover {
-  background-color: #bb3e03;
-  border: #bb3e03 solid 0.1rem;
-}
-.boton-main {
-  display: flex;
-  justify-content: center;
-  margin: 0 15rem;
-  width: auto;
-}
+
+

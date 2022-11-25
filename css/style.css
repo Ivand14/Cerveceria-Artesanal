@@ -341,10 +341,7 @@ h4{
 .contenido h5{
     font-size: 2rem;
 }
-.bton{
-    display: flex;
-    justify-content: center;
-}
+
 
 /*Footer*/
 .footer{

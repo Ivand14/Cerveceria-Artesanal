@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Ivand14/preEntrega2-Dicesare.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ivand14/preEntrega2-Dicesare/issues"
   },
-  "homepage": "https://github.com/Ivand14/preEntrega2-Dicesare#readme"
+  "homepage": "https://github.com/Ivand14/preEntrega2-Dicesare#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }
