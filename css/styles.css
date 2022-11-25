@@ -40,389 +40,6 @@ h4 {
   font-size: 1.5rem;
 }
 
-/*GRID MENU*/
-.contenedorMenu-grid {
-  display: grid;
-  grid-template-areas: "pintas pintas pintas" "especiales especiales especiales" "comida comida comida";
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 4rem;
-  gap: 7rem;
-}
-
-/*GRID UBICACION*/
-.ubicacion-padre {
-  display: grid;
-  grid-template-areas: "texto texto texto" "horario horario horario" "mapa mapa mapa";
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 1rem;
-}
-
-/*header*/
-.contenedor-inicio {
-  background-image: url("../fotos/fondo-inicio.jpg");
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: none;
-  max-width: 100%;
-  height: 69.4rem;
-}
-
-.navbar {
-  height: 7rem;
-  background-color: #000000;
-}
-
-.navbar-brand img {
-  height: 6.8rem;
-  width: auto;
-}
-
-.navbar-texto {
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar-texto a {
-  color: wheat;
-  font-size: 1.5rem;
-}
-
-.navbar-texto a:hover {
-  transition: all 1s;
-  color: #bb3e03;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: #bb3e03;
-}
-
-.navbar-toggler {
-  color: #d9cab3;
-}
-
-.redes-nav {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 1rem;
-}
-
-.redes-nav img {
-  height: 3rem;
-  width: 3rem;
-  margin-right: 1.5rem;
-}
-
-.redes-nav img {
-  transition: all 300ms;
-}
-
-.redes-nav img:hover {
-  transform: scale(1.25);
-}
-
-.texto-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 10rem 1rem 0 1rem;
-}
-
-.texto-main h2 {
-  margin-bottom: 2rem;
-}
-
-.animate__fadeIn {
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-}
-
-/*Nosotros*/
-.nosotros, .fabricacion, h2 {
-  text-align: center;
-  margin: 2rem 1.3rem 0 0rem;
-}
-
-.nosotros p {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.imagenes-staff {
-  display: flex;
-  justify-content: space-around;
-  margin: 4rem;
-  flex-wrap: wrap;
-}
-
-.staff1 p {
-  position: relative;
-  font-size: 1.2rem;
-  bottom: 8rem;
-  left: 1.3rem;
-  color: #bb3e03;
-  opacity: 0;
-}
-
-.staff img {
-  border-radius: 2rem;
-  height: 20rem;
-  width: 24rem;
-  align-content: space-around;
-  margin: 3rem 3rem;
-}
-
-.contenedor-staff1 {
-  overflow: hidden;
-}
-
-.imagen-fabrica {
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-fabrica img {
-  height: 30rem;
-  width: 30rem;
-  margin: 5rem 50rem;
-  transition: all 300ms;
-  border-radius: 1rem;
-}
-
-.imagen-fabrica {
-  transition: all 1s;
-}
-
-.imagen-fabrica img:hover {
-  transform: scale(1.25);
-}
-
-/*ANIMACION STAFF*/
-.staff {
-  transition: all 1s;
-}
-
-.imagenes-staff img {
-  transition: all 300ms;
-}
-
-.imagenes-staff img:hover {
-  transform: scale(1.25);
-}
-
-/*ANIMACION FABRICACION*/
-.animate__fadeInUp {
-  animation-duration: 1s;
-  animation-delay: 0.1s;
-}
-
-.img {
-  background-image: url("../fotos/nosotros-portada.jpg");
-  background-repeat: none;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  overflow: hidden;
-  background-color: rgba(22, 26, 29, 0.6509803922);
-}
-
-/*MENU*/
-.menu-fondo {
-  background-image: url("../fotos/menu3.jpg");
-  background-repeat: none;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.contenedorMenu-grid {
-  display: grid;
-  grid-template-areas: "pintas pintas pintas" "especiales especiales especiales" "comida comida comida";
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 4rem;
-  gap: 7rem;
-}
-
-.pintas {
-  grid-area: pintas;
-  display: flex;
-  flex-direction: column;
-}
-
-.pintas h2 {
-  margin-right: 4rem;
-}
-
-.pintas-especiales {
-  grid-area: especiales;
-  display: flex;
-  flex-direction: column;
-}
-
-.comida {
-  display: flex;
-  grid-area: comida;
-  flex-direction: column;
-}
-
-.card {
-  background-color: #0c0f0a;
-  box-shadow: #000000 0.3rem 0.4rem 0.1rem 0.1rem;
-}
-
-.card img {
-  height: 28rem;
-}
-
-.contenedor-card {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.btn {
-  color: #bb3e03;
-  text-decoration: none;
-}
-
-.btn:hover {
-  text-decoration: none;
-  color: beige;
-}
-
-/*ubicacion*/
-.ubicacion-fondo {
-  background-image: url("../fotos/ubicacion.jpg");
-  background-repeat: none;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.ubicacion-padre {
-  display: grid;
-  grid-template-areas: "texto texto texto" "horario horario horario" "mapa mapa mapa";
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 1rem;
-}
-
-.texto1-ubicacion {
-  grid-area: texto;
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  color: #bb3e03;
-  margin-top: 7rem;
-}
-
-.horarios {
-  grid-area: horario;
-  display: flex;
-  justify-content: center;
-  margin: 2.5rem 2.5rem;
-}
-
-.mapa {
-  grid-area: mapa;
-  display: flex;
-  justify-content: center;
-  margin: 2rem 2rem;
-}
-
-/*contacto*/
-.contacto-padre {
-  background-color: #000000;
-  height: 63rem;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.formulario {
-  border: #bb3e03 0.3rem solid;
-  border-radius: 0.3rem;
-  background-color: rgba(0, 0, 0, 0.719);
-  width: 35rem;
-  height: 31rem;
-  font-size: 2rem;
-}
-
-.formulario :focus {
-  background: #0c0f0a;
-  color: #bb3e03;
-}
-
-.texto-contacto {
-  text-align: center;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  margin: 3rem 2rem;
-}
-
-.contenido {
-  color: beige;
-  margin: 1rem 4rem;
-  text-align: center;
-}
-
-.contenido h5 {
-  font-size: 2rem;
-}
-
-.bton {
-  display: flex;
-  justify-content: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Merienda", cursive;
-}
-
-h1 {
-  color: #bb3e03;
-  font-family: "Merienda", cursive;
-}
-
-h2 {
-  color: #bb3e03;
-  font-size: 3.5rem;
-  font-family: "Merienda", cursive;
-  text-decoration: underline;
-}
-
-p {
-  color: beige;
-  font-size: 2rem;
-  font-family: "Merienda", cursive;
-}
-
-h3 {
-  color: #bb3e03;
-  font-size: 2.5rem;
-  font-family: "Merienda", cursive;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
 /*header*/
 .contenedor-inicio {
   background-image: url("../fotos/fondo-inicio.jpg");
@@ -506,13 +123,16 @@ h4 {
 
 .btn {
   background-color: #000000;
-  border: solid #000000 1rem;
+  border: solid #000000;
   font-size: 1.7rem;
+  transition: all 0.2s;
 }
 
 .btn:hover {
   background-color: #bb3e03;
-  border: #bb3e03 solid 0.1rem;
+  border: solid #bb3e03;
+  font-size: 1.5rem;
+  transform: scale(1.25);
 }
 
 .boton-main {
@@ -812,28 +432,67 @@ h2 {
 
 /*Media queries*/
 /*INDEX*/
-@media (max-width: 1010px) and (min-width: 712px) {
+@media (max-width: 1010px) and (min-width: 531px) {
   .texto-main h2 {
-    margin-right: 10rem;
+    text-align: center;
+    margin-left: 6rem;
+    font-size: 2.2rem;
   }
   .texto-main p {
     margin-bottom: 2rem;
   }
+  .btn {
+    background-color: #000000;
+    border: solid #000000;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    background-color: #bb3e03;
+    border: solid #bb3e03;
+    font-size: 1.3rem;
+    transform: scale(1.25);
+  }
   .boton-main {
-    margin-left: 32rem;
+    margin-left: 20rem;
   }
   .navbar-collapse {
     background-color: #000000;
     z-index: 1;
+    justify-content: center;
   }
 }
-@media (max-width: 534px) and (min-width: 180px) {
+@media (max-width: 534px) and (min-width: 264px) {
   .contenedor-inicio {
     background-image: url("../fotos/fondo-cel.jpg");
   }
   .navbar-collapse {
     background-color: #000000;
     z-index: 1;
+  }
+  .btn {
+    background-color: #000000;
+    border: solid #000000;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    background-color: #bb3e03;
+    border: solid #bb3e03;
+    font-size: 0.9rem;
+    transform: scale(1.25);
+  }
+}
+@media (max-width: 263px) and (min-width: 187px) {
+  .contenedor-inicio {
+    background-image: url("../fotos/fondo-cel.jpg");
+  }
+  .navbar-collapse {
+    background-color: #000000;
+    z-index: 1;
+  }
+  .texto-main p {
+    font-size: 1.3rem;
   }
 }
 /*NOSOTROS*/
@@ -844,9 +503,7 @@ h2 {
   .navbar-texto {
     background-color: rgba(0, 0, 0, 0.7960784314);
   }
-  .nosotros,
-  .fabricacion,
-  p {
+  .nosotros, .fabricacion, p {
     margin: 1rem;
   }
   .redes-nav {
@@ -867,15 +524,11 @@ h2 {
   .navbar-toggler {
     filter: invert(1);
   }
-  .nosotros,
-  .fabricacion,
-  h2 {
+  .nosotros, .fabricacion, h2 {
     margin: 1rem;
     font-size: 2rem;
   }
-  .nosotros,
-  .fabricacion,
-  p {
+  .nosotros, .fabricacion, p {
     margin: 1rem;
     font-size: 1.2rem;
   }
@@ -897,9 +550,7 @@ h2 {
   .navbar-toggler {
     filter: invert(1);
   }
-  .nosotros,
-  .fabricacion,
-  p {
+  .nosotros, .fabricacion, p {
     margin: 1rem;
   }
   .redes-nav {
@@ -920,9 +571,7 @@ h2 {
   .navbar-toggler {
     filter: invert(1);
   }
-  .nosotros,
-  .fabricacion,
-  p {
+  .nosotros, .fabricacion, p {
     margin: 1rem;
   }
   .redes-nav {
@@ -943,9 +592,7 @@ h2 {
   .navbar-toggler {
     filter: invert(1);
   }
-  .nosotros,
-  .fabricacion,
-  p {
+  .nosotros, .fabricacion, p {
     margin: 1rem;
   }
   .redes-nav {
@@ -963,46 +610,24 @@ h2 {
   }
 }
 /*MENU*/
-@media screen and (max-width: 1075px) {
-  .texto-main h2 {
-    text-align: center;
-    margin-left: 5rem;
+@media screen and (max-width: 1009px) {
+  .menu-texto1 h2 {
+    font-size: 3rem;
   }
-  .texto-main p {
-    margin-left: 2rem;
-    font-size: 1.8rem;
-  }
-  .boton-main {
-    margin-left: 17rem;
+  .menu-texto2 h3 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 992px) {
   .redes-nav {
     display: none;
   }
-}
-@media (max-width: 1010px) and (min-width: 531px) {
-  .contenedor-inicio {
-    background-size: cover;
+  .menu-texto1 h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
   }
-  .texto-main h2 {
-    text-align: center;
-    margin-left: 13rem;
-    font-size: 2.2rem;
-  }
-  .texto-main p {
-    margin-left: 4rem;
+  .menu-texto2 h3 {
     font-size: 1.6rem;
-    width: auto;
-  }
-  .boton-main {
-    margin-left: 19rem;
-  }
-}
-@media (max-width: 534px) and (min-width: 168px) {
-  .contenedor-inicio {
-    background-image: url("../fotos/fondo-celu.png");
-    background-size: cover;
   }
 }
 /*UBICACION*/
