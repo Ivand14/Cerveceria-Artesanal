@@ -1,0 +1,53 @@
+/*MENU*/
+
+.menu-fondo {
+    background-image: url("../fotos/menu3.jpg");
+    @include imagen-posicion;
+  }
+  .contenedorMenu-grid {
+    display: grid;
+    grid-template-areas:
+      "pintas pintas pintas"
+      "especiales especiales especiales"
+      "comida comida comida";
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 4rem;
+    gap: 7rem;
+  }
+  .pintas {
+    grid-area: pintas;
+    @include flex-column;
+  }
+  .pintas h2 {
+    margin-right: 4rem;
+  }
+  .pintas-especiales {
+    grid-area: especiales;
+    @include flex-column;
+  }
+  .comida {
+    grid-area: comida;
+    @include flex-column;
+    
+  }
+  .card {
+    background-color: #0c0f0a;
+    box-shadow: #000000 0.3rem 0.4rem 0.1rem 0.1rem;
+  }
+  .card img {
+    height: 28rem;
+  }
+  
+  .contenedor-card {
+    @include flex-center;
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    color: #bb3e03;
+    text-decoration: none;
+  }
+  .btn:hover {
+    text-decoration: none;
+    color: beige;
+  }

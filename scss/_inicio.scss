@@ -1,0 +1,82 @@
+@import "variables";
+
+/*header*/
+.contenedor-inicio {
+    background-image: url("../fotos/fondo-inicio.jpg");
+    @include imagen-posicion;
+    height: 63.7rem;
+  }
+  
+  .navbar {
+    height: 7rem;
+    background-color: #000000;
+  }
+  
+  .navbar-brand img {
+    height: 6.8rem;
+    width: auto;
+  }
+  .navbar-texto {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar-texto a {
+    color: wheat;
+    font-size: 1.5rem;
+  }
+  .navbar-texto a:hover {
+    transition: all 1s;
+    color: #bb3e03;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: $color-principal;
+  }
+  .navbar-toggler {
+    color: #d9cab3;
+  }
+  .redes-nav {
+    @include flex-center;
+    margin: 1rem 1rem;
+  }
+  .redes-nav img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.5rem;
+  }
+  .redes-nav img {
+    transition: all 300ms;
+  }
+  .redes-nav img:hover {
+    transform: scale(1.25);
+  }
+  .texto-main {
+    @include flex-center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 1rem 0 1rem;
+  }
+  .texto-main h2 {
+    margin-bottom: 2rem;
+  }
+  .animate__fadeIn {
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+  }
+  .btn {
+    background-color: #000000;
+    border: solid #000000;
+    font-size: 1.7rem;
+    transition: all .2s;
+  }
+  .btn:hover {
+    background-color: #bb3e03;
+    border: solid #bb3e03;
+    font-size: 1.5rem;
+    transform: scale(1.25);
+  }
+  .boton-main {
+    @include flex-center;
+    margin: 0 15rem;
+    width: auto;
+  }

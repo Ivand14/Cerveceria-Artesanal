@@ -1,3 +1,5 @@
+/*MIXINS*/
+/*EXTENDS*/
 * {
   margin: 0;
   padding: 0;
@@ -19,8 +21,8 @@ h1 {
 
 h2 {
   color: #bb3e03;
-  font-size: 3.5rem;
   font-family: "Merienda", cursive;
+  font-size: 3.5rem;
   text-decoration: underline;
 }
 
@@ -32,64 +34,25 @@ p {
 
 h3 {
   color: #bb3e03;
-  font-size: 2.5rem;
   font-family: "Merienda", cursive;
+  font-size: 2.5rem;
 }
 
 h4 {
   font-size: 1.5rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Merienda", cursive;
-}
-
-h1 {
-  color: #bb3e03;
-  font-family: "Merienda", cursive;
-}
-
-h2 {
-  color: #bb3e03;
-  font-size: 3.5rem;
-  font-family: "Merienda", cursive;
-  text-decoration: underline;
-}
-
-p {
-  color: beige;
-  font-size: 2rem;
-  font-family: "Merienda", cursive;
-}
-
-h3 {
-  color: #bb3e03;
-  font-size: 2.5rem;
-  font-family: "Merienda", cursive;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
+/*MIXINS*/
+/*EXTENDS*/
 /*header*/
 .contenedor-inicio {
   background-image: url("../fotos/fondo-inicio.jpg");
-  overflow: hidden;
-  background-size: cover;
   background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
   max-width: 100%;
-  height: 69.4rem;
+  overflow: hidden;
+  height: 63.7rem;
 }
 
 .navbar {
@@ -310,8 +273,8 @@ h2 {
 }
 
 .comida {
-  display: flex;
   grid-area: comida;
+  display: flex;
   flex-direction: column;
 }
 
@@ -380,6 +343,8 @@ h2 {
   margin: 2rem 2rem;
 }
 
+/*MIXINS*/
+/*EXTENDS*/
 /*contacto*/
 .contacto-padre {
   background-color: #000000;
@@ -397,7 +362,7 @@ h2 {
   border-radius: 0.3rem;
   background-color: rgba(0, 0, 0, 0.719);
   width: 35rem;
-  height: 31rem;
+  height: 32rem;
   font-size: 2rem;
 }
 
@@ -409,8 +374,8 @@ h2 {
 .texto-contacto {
   text-align: center;
   display: flex;
-  align-content: center;
   flex-direction: column;
+  align-content: center;
   margin: 3rem 2rem;
 }
 
@@ -424,7 +389,7 @@ h2 {
   font-size: 2rem;
 }
 
-.bton {
+.boton-contacto {
   display: flex;
   justify-content: center;
 }
@@ -462,8 +427,8 @@ h2 {
 
 .derechos {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 2rem 2rem;
 }
 
@@ -553,8 +518,8 @@ h2 {
   }
   .derechos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 2rem 2rem;
   }
   .derechos h4 {
@@ -579,8 +544,8 @@ h2 {
   }
   .derechos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 2rem 2rem;
   }
   .derechos h4 {
@@ -600,8 +565,8 @@ h2 {
   }
   .derechos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 2rem 2rem;
   }
   .derechos h4 {
@@ -621,8 +586,8 @@ h2 {
   }
   .derechos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 2rem 2rem;
   }
   .derechos h4 {
@@ -642,8 +607,8 @@ h2 {
   }
   .derechos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 2rem 2rem;
   }
   .derechos h4 {
@@ -716,7 +681,7 @@ h2 {
     width: 45rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 321px) {
   .ubicacion-padre {
     display: grid;
     grid-template-areas: "texto texto" "horario horario" "mapa mapa" "ubicacion ubicacion ";
@@ -732,21 +697,21 @@ h2 {
   .texto1-ubicacion {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-right: -2rem;
   }
   .horarios {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-right: -1rem;
   }
   .mapa iframe {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-right: -1rem;
     width: 45rem;
   }
 }
-@media screen and (max-width: 379px) {
+@media (max-width: 320px) and (min-width: 253px) {
   .mapa iframe {
     display: flex;
     flex-direction: column;
@@ -755,17 +720,10 @@ h2 {
   }
   .texto1-ubicacion h2 {
     font-size: 1.4rem;
+    width: 100%;
   }
   .horarios p {
     font-size: 1rem;
-  }
-}
-@media screen and (max-width: 253px) {
-  .mapa iframe {
-    display: flex;
-    flex-direction: column;
-    margin: 0 12rem;
-    width: 20rem;
   }
 }
 /*CONTACTO*/
@@ -800,7 +758,19 @@ h2 {
 }
 @media screen and (max-width: 300px) {
   .contacto-padre {
-    height: 69rem;
+    height: 63rem;
+  }
+}
+@media (max-width: 302px) and (min-width: 155px) {
+  .contacto-padre {
+    height: 63rem;
+  }
+  .texto-contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0rem 2rem;
   }
 }
 

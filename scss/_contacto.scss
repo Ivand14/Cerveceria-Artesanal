@@ -1,0 +1,45 @@
+@import "variables";
+
+/*contacto*/
+
+.contacto-padre {
+  background-color: #000000;
+  height: 63rem;
+}
+.contacto {
+  @include flex-column;
+  align-items: center;
+
+}
+
+.formulario {
+  border: #bb3e03 0.3rem solid;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 35rem;
+  height: 32rem;
+  font-size: 2rem;
+}
+.formulario :focus {
+  background: #0c0f0a;
+  color: #bb3e03;
+}
+.texto-contacto {
+  text-align: center;
+  @include flex-column;
+  align-content: center;
+  margin: 3rem 2rem;
+  
+}
+.contenido {
+  color: beige;
+  margin: 1rem 4rem;
+  text-align: center;
+}
+.contenido h5 {
+  font-size: 2rem;
+}
+
+.boton-contacto{
+  @include centrado;
+}

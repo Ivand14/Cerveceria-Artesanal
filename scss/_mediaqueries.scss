@@ -1,0 +1,363 @@
+/*Media queries*/
+
+/*INDEX*/
+@media (max-width:1010px) and (min-width:531px){
+    .texto-main h2{
+        text-align: center;
+        margin-left: 6rem;
+        font-size: 2.2rem;
+        
+    }
+    .texto-main p{
+        margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #000000;
+      border: solid #000000;
+      font-size: 1.5rem;
+      transition: all .2s;
+    }
+    .btn:hover {
+      background-color: #bb3e03;
+      border: solid #bb3e03;
+      font-size: 1.3rem;
+      transform: scale(1.25);
+    }
+    .boton-main{
+        margin-left: 20rem;
+    }
+    .navbar-collapse{
+        background-color: #000000;
+        z-index: 1;
+        justify-content: center;
+    }
+  }
+  @media (max-width: 534px) and (min-width: 264px){
+    .contenedor-inicio{
+        background-image: url('../fotos/fondo-cel.jpg');
+    }
+    
+    .navbar-collapse{
+        background-color: #000000;
+        z-index: 1;
+    }
+    .btn {
+      background-color: #000000;
+      border: solid #000000;
+      font-size: 1.2rem;
+      transition: all .2s;
+    }
+    .btn:hover {
+      background-color: #bb3e03;
+      border: solid #bb3e03;
+      font-size: .9rem;
+      transform: scale(1.25);
+    }
+  }
+  @media (max-width: 263px) and (min-width: 187px){
+    .contenedor-inicio{
+        background-image: url('../fotos/fondo-cel.jpg');
+    }
+    
+    .navbar-collapse{
+        background-color: #000000;
+        z-index: 1;
+    }
+  
+    .texto-main p{
+        font-size: 1.3rem;
+    }
+  }
+  
+  /*NOSOTROS*/
+  @media screen and (max-width:986px){
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .navbar-texto{
+        background-color: #000000cb;
+    }
+    .nosotros,.fabricacion,p{
+        margin: 1rem;
+    }
+    .redes-nav{
+        display: none;
+    }
+    .derechos{
+        @include flex-center;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .derechos h4{
+        font-size: 1.3rem;
+        margin: 2rem 2rem;
+    }
+  }
+  @media screen and (max-width:538px){
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .nosotros,.fabricacion,h2{
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    .nosotros,.fabricacion,p{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .redes-nav{
+        display: none;
+    }
+    .derechos{
+        @include flex-center;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .derechos h4{
+        font-size: 1.3rem;
+        margin: 2rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width:322px){
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .nosotros,.fabricacion,p{
+        margin: 1rem;
+    }
+    .redes-nav{
+        display: none;
+    }
+    .derechos{
+        @include flex-center;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .derechos h4{
+        font-size: 1.3rem;
+        margin: 2rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width:262px){
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .nosotros,.fabricacion,p{
+        margin: 1rem;
+    }
+    .redes-nav{
+        display: none;
+    }
+    .derechos{
+        @include flex-center;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .derechos h4{
+        font-size: 1.3rem;
+        margin: 6rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width:182px){
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .nosotros,.fabricacion,p{
+        margin: 1rem;
+    }
+    .redes-nav{
+        display: none;
+    }
+    .derechos{
+        @include flex-center;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .derechos h4{
+        font-size: 1.3rem;
+        margin: 1rem 2rem;
+    }
+  }
+  
+  /*MENU*/
+  @media  screen and (max-width:1009px) {
+    .menu-texto1 h2{
+      font-size: 3rem;
+    }
+    .menu-texto2 h3{
+      font-size: 2rem;
+    }
+  }
+  @media  screen and (max-width:992px) {
+    .redes-nav{
+        display: none;
+    }
+    .menu-texto1 h2{
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+    }
+    .menu-texto2 h3{
+      font-size: 1.6rem;
+    }
+  }
+  
+  
+  /*UBICACION*/
+  @media screen and (max-width:992px){
+    .redes{
+        display: none;
+    }
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    .navbar img{
+        height: 6rem;
+    }
+  }
+  
+  @media screen and (max-width:797px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "horario "
+        "mapa"
+        "ubicacion ";
+    
+        grid-template-columns: repeat(1,1fr);
+        margin: 2rem 1rem;
+    }
+    
+  }
+  @media screen and (max-width:797px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto texto"
+        "horario horario"
+        "mapa mapa"
+        "ubicacion ubicacion ";
+    
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem 4rem;
+    }
+    .texto1-ubicacion{
+        @include flex-column;
+        margin-right: 5rem;
+    }
+    .horarios{
+        @include flex-column;
+        margin-right: 5rem;
+    }
+    .mapa iframe{
+        @include flex-column;
+        margin-right: 5rem;
+        width: 45rem;
+    }
+    
+  }
+  
+  @media (max-width:600px) and (min-width:321px){
+    .ubicacion-padre{
+        display: grid;
+        grid-template-areas: 
+        "texto texto"
+        "horario horario"
+        "mapa mapa"
+        "ubicacion ubicacion ";
+    
+        grid-template-columns: repeat(2,1fr);
+        margin: 2rem 4rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .texto1-ubicacion{
+        @include flex-column;
+        margin-right: -2rem;
+        
+    }
+  
+    .horarios{
+        @include flex-column;
+        margin-right: -1rem;
+    }
+    .mapa iframe{
+        @include flex-column;
+        margin-right: -1rem;
+        width: 45rem;
+    }
+    
+  }
+  @media  (max-width:320px) and (min-width:253px){
+    .mapa iframe{
+        @include flex-column;
+        margin: 0 8rem;
+        width: 25rem;
+    }
+    .texto1-ubicacion h2{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .horarios p{
+        font-size: 1rem;
+    }
+  }
+  
+  /*CONTACTO*/
+  
+  @media screen and (max-width:1010px) {
+    h2{
+        font-size: 2rem;
+    }
+    .contenido h5{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .contenido  label{
+        font-size: 1.2rem;
+        
+    }
+    .contenido input{
+        height: 2rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+   textarea{
+        width: 10rem;
+    }
+    .bton input{
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .formulario{
+        width: 22rem;
+        
+    }
+  }
+  
+  @media screen and (max-width:300px){
+    .contacto-padre{
+        height: 63rem;
+    }
+  }
+  @media  (max-width:302px) and (min-width:155px){
+    .contacto-padre{
+        height: 63rem;
+    }
+    
+    .texto-contacto {
+        text-align: center;
+        @include flex-column;
+        align-content: center;
+        margin: 0rem 2rem;
+    }
+  }
