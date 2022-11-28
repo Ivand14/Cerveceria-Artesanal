@@ -678,14 +678,6 @@ h4 {
 @media screen and (max-width: 797px) {
   .ubicacion-padre {
     display: grid;
-    grid-template-areas: "texto" "horario " "mapa" "ubicacion ";
-    grid-template-columns: repeat(1, 1fr);
-    margin: 2rem 1rem;
-  }
-}
-@media screen and (max-width: 797px) {
-  .ubicacion-padre {
-    display: grid;
     grid-template-areas: "texto texto" "horario horario" "mapa mapa" "ubicacion ubicacion ";
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem 4rem;
@@ -693,21 +685,21 @@ h4 {
   .texto1-ubicacion {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    text-align: center;
   }
   .horarios {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    text-align: center;
   }
   .mapa iframe {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-left: 1rem;
     width: 45rem;
   }
 }
-@media (max-width: 600px) and (min-width: 321px) {
+@media (max-width: 600px) and (min-width: 310px) {
   .ubicacion-padre {
     display: grid;
     grid-template-areas: "texto texto" "horario horario" "mapa mapa" "ubicacion ubicacion ";
@@ -723,21 +715,23 @@ h4 {
   .texto1-ubicacion {
     display: flex;
     flex-direction: column;
-    margin-right: -2rem;
+    text-align: center;
+    font-size: 1.6rem;
   }
   .horarios {
     display: flex;
     flex-direction: column;
-    margin-right: -1rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
   .mapa iframe {
     display: flex;
     flex-direction: column;
-    margin-right: -1rem;
+    margin-left: 1rem;
     width: 45rem;
   }
 }
-@media (max-width: 320px) and (min-width: 253px) {
+@media (max-width: 309px) and (min-width: 253px) {
   .mapa iframe {
     display: flex;
     flex-direction: column;
