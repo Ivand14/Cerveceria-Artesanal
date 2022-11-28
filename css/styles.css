@@ -554,6 +554,9 @@ h4 {
   }
 }
 @media screen and (max-width: 538px) {
+  .img {
+    background-image: url("../fotos/fondocel-nos.png");
+  }
   .navbar-toggler {
     filter: invert(1);
   }
@@ -580,6 +583,11 @@ h4 {
   }
 }
 @media screen and (max-width: 322px) {
+  .img {
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100%;
+  }
   .navbar-toggler {
     filter: invert(1);
   }
@@ -648,6 +656,9 @@ h4 {
     font-size: 3rem;
   }
   .menu-texto2 h3, .especiales h3 h3 {
+    font-size: 2rem;
+  }
+  .especiales h3 {
     font-size: 2rem;
   }
 }
