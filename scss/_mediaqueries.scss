@@ -343,7 +343,12 @@
         
     }
   }
-  
+  @media screen and (max-width:506px){
+
+    .contacto-padre{
+        height: 70rem;
+    }
+  }
   @media screen and (max-width:300px){
     .contacto-padre{
         height: 63rem;

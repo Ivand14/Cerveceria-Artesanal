@@ -1,9 +1,8 @@
 /*Nosotros*/
-.nosotros,
-.fabricacion,
-h2 {
+
+.nosotros h2{
   text-align: center;
-  margin: 2rem 1.3rem 0 0rem;
+  margin: 11rem 1.3rem 0 0rem;
 }
 .nosotros p {
   text-align: center;
@@ -32,6 +31,9 @@ h2 {
 }
 .contenedor-staff1 {
   overflow: hidden;
+}
+.fabricacion{
+  @extend .nosotros ;
 }
 .imagen-fabrica {
   @include flex-center;

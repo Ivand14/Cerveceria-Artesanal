@@ -9,9 +9,11 @@
 .contacto {
   @include flex-column;
   align-items: center;
-
 }
 
+.contacto h2{
+  margin-top: 8rem;
+}
 .formulario {
   border: #bb3e03 0.3rem solid;
   border-radius: 0.3rem;

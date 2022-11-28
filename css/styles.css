@@ -58,6 +58,10 @@ h4 {
 .navbar {
   height: 7rem;
   background-color: #000000;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar-brand img {
@@ -148,14 +152,12 @@ h4 {
 }
 
 /*Nosotros*/
-.nosotros,
-.fabricacion,
-h2 {
+.nosotros h2, .fabricacion h2 {
   text-align: center;
-  margin: 2rem 1.3rem 0 0rem;
+  margin: 11rem 1.3rem 0 0rem;
 }
 
-.nosotros p {
+.nosotros p, .fabricacion p {
   text-align: center;
   margin-top: 1rem;
 }
@@ -260,10 +262,17 @@ h2 {
   grid-area: pintas;
   display: flex;
   flex-direction: column;
+  margin-right: 4rem;
 }
 
-.pintas h2 {
-  margin-right: 4rem;
+.menu-texto1, .comida h2 {
+  margin-top: 11rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.menu-texto2, .especiales h3 {
+  text-align: justify;
 }
 
 .pintas-especiales {
@@ -276,14 +285,26 @@ h2 {
   grid-area: comida;
   display: flex;
   flex-direction: column;
+  margin-top: -9rem;
 }
 
-.card {
+.card, .card:hover {
   background-color: #0c0f0a;
-  box-shadow: #000000 0.3rem 0.4rem 0.1rem 0.1rem;
+  box-shadow: rgba(0, 0, 0, 0.6235294118) 0.3rem 0.4rem 0.1rem 0.1rem;
+  transition: all 0.5s;
+  width: 50%;
 }
 
-.card img {
+.card img, .card:hover img {
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card img, .card:hover img {
   height: 28rem;
 }
 
@@ -355,6 +376,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contacto h2 {
+  margin-top: 8rem;
 }
 
 .formulario {
@@ -618,10 +643,10 @@ h2 {
 }
 /*MENU*/
 @media screen and (max-width: 1009px) {
-  .menu-texto1 h2 {
+  .menu-texto1 h2, .comida h2 h2 {
     font-size: 3rem;
   }
-  .menu-texto2 h3 {
+  .menu-texto2 h3, .especiales h3 h3 {
     font-size: 2rem;
   }
 }
@@ -629,11 +654,11 @@ h2 {
   .redes-nav {
     display: none;
   }
-  .menu-texto1 h2 {
+  .menu-texto1 h2, .comida h2 h2 {
     font-size: 2.3rem;
     margin-bottom: 2rem;
   }
-  .menu-texto2 h3 {
+  .menu-texto2 h3, .especiales h3 h3 {
     font-size: 1.6rem;
   }
 }
@@ -754,6 +779,11 @@ h2 {
   }
   .formulario {
     width: 22rem;
+  }
+}
+@media screen and (max-width: 506px) {
+  .contacto-padre {
+    height: 70rem;
   }
 }
 @media screen and (max-width: 300px) {
