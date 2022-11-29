@@ -11,8 +11,10 @@
   align-items: center;
 }
 
-.contacto h2{
-  margin-top: 8rem;
+.contacto {
+  img{
+    margin-top: 8rem;
+  }
 }
 .formulario {
   border: #bb3e03 0.3rem solid;
@@ -38,8 +40,10 @@
   margin: 1rem 4rem;
   text-align: center;
 }
-.contenido h5 {
-  font-size: 2rem;
+.contenido  {
+  h5{
+    font-size: 2rem;
+  }
 }
 
 .boton-contacto{

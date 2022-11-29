@@ -33,16 +33,20 @@
     grid-area: especiales;
     @include flex-column;
   }
-  .especiales h3{
-    @extend .menu-texto2;
+  .especiales{
+    h3{
+      @extend .menu-texto2;
+    }
   }
   .comida {
     grid-area: comida;
     @include flex-column;
     margin-top: -9rem;
   }
-  .comida h2{
-    @extend .menu-texto1;
+  .comida {
+    h2{
+      @extend .menu-texto1;
+    }
   }
   .card {
     background-color: #0c0f0a;
@@ -50,17 +54,21 @@
     transition: all 0.5s;
     width: 50%;
   }
-  .card img{
-    object-fit: cover;
+  .card {
+    img{
+      object-fit: cover;
+    }
   }
   .card:hover{
     @extend .card;
-    transform: scale(1.1);
+    transform: scale(1.07);
     cursor: pointer;
 
   }
-  .card img {
-    height: 28rem;
+  .card  {
+    img{
+      height: 28rem;
+    }
   }
   
   .contenedor-card {
