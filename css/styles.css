@@ -556,6 +556,11 @@ h4 {
 @media screen and (max-width: 538px) {
   .img {
     background-image: url("../fotos/fondocel-nos.png");
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    overflow: hidden;
   }
   .navbar-toggler {
     filter: invert(1);
@@ -583,11 +588,6 @@ h4 {
   }
 }
 @media screen and (max-width: 322px) {
-  .img {
-    background-size: cover;
-    overflow: hidden;
-    max-width: 100%;
-  }
   .navbar-toggler {
     filter: invert(1);
   }

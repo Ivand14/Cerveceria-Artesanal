@@ -97,6 +97,7 @@
   @media screen and (max-width:538px){
     .img{
         background-image: url('../fotos/fondocel-nos.png');
+        @include imagen-posicion;
     }
     .navbar-toggler{
         filter: invert(1);
@@ -124,11 +125,7 @@
   }
   
   @media screen and (max-width:322px){
-    .img{
-        background-size: cover;
-        overflow: hidden;
-        max-width: 100%;
-    }
+    
     .navbar-toggler{
         filter: invert(1);
     }
@@ -262,7 +259,7 @@
     }
     
   }
-  
+ 
   @media (max-width:600px) and (min-width:310px){
     .ubicacion-padre{
         display: grid;
