@@ -1,5 +1,4 @@
 /*MIXINS*/
-/*EXTENDS*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Merienda", cursive;
+  font-family: "Merienda One", cursive;
 }
 
 h1 {
@@ -29,7 +28,7 @@ h2 {
 p {
   color: beige;
   font-size: 2rem;
-  font-family: "Merienda", cursive;
+  font-family: "Merienda One", cursive;
 }
 
 h3 {
@@ -43,7 +42,6 @@ h4 {
 }
 
 /*MIXINS*/
-/*EXTENDS*/
 /*header*/
 .contenedor-inicio {
   background-image: url("../fotos/fondo-inicio.jpg");
@@ -366,7 +364,6 @@ h4 {
 }
 
 /*MIXINS*/
-/*EXTENDS*/
 /*contacto*/
 .contacto-padre {
   background-color: #000000;

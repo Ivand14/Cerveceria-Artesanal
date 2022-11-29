@@ -8,16 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ivand14/preEntrega2-Dicesare.git"
+    "url": "git+https://github.com/Ivand14/proyecto-pirca.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ivand14/preEntrega2-Dicesare/issues"
+    "url": "https://github.com/Ivand14/proyecto-pirca/issues"
   },
-  "homepage": "https://github.com/Ivand14/preEntrega2-Dicesare#readme",
-  "dependencies": {
+  "homepage": "https://github.com/Ivand14/proyecto-pirca#readme",
+  "devDependencies": {
     "sass": "^1.56.1"
   }
 }
