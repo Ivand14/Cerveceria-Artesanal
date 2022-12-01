@@ -1,89 +1,88 @@
 /*MENU*/
 
 .menu-fondo {
-    background-image: url("../fotos/menu3.jpg");
-    @include imagen-posicion;
-  }
-  .contenedorMenu-grid {
-    display: grid;
-    grid-template-areas:
-      "pintas pintas pintas"
-      "especiales especiales especiales"
-      "comida comida comida";
-    grid-template-columns: repeat(3, 1fr);
-    margin: 2rem 4rem;
-    gap: 7rem;
-  }
-  .pintas {
-    grid-area: pintas;
-    @include flex-column;
-    margin-right: 4rem;
-  }
-  
-  .menu-texto1{
-    margin-top: 11rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    
-  }
-  .menu-texto2{
-    text-align: justify;
-  }
-  .pintas-especiales {
-    grid-area: especiales;
-    @include flex-column;
-  }
-  .especiales{
-    h3{
-      @extend .menu-texto2;
-    }
-  }
-  .comida {
-    grid-area: comida;
-    @include flex-column;
-    margin-top: -9rem;
-  }
-  .comida {
-    h2{
-      @extend .menu-texto1;
-    }
-  }
-  .card {
-    background-color: #0c0f0a;
-    box-shadow: #0000009f 0.3rem 0.4rem 0.1rem 0.1rem;
-    transition: all 0.5s;
-    width: 50%;
-  }
-  .card {
-    img{
-      object-fit: cover;
-    }
-  }
-  .card:hover{
-    @extend .card;
-    transform: scale(1.07);
-    cursor: pointer;
+  background-image: url("../fotos/menu3.jpg");
+  @include imagen-posicion;
+}
+.contenedorMenu-grid {
+  display: grid;
+  grid-template-areas:
+    "pintas pintas pintas"
+    "especiales especiales especiales"
+    "comida comida comida";
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 4rem;
+  gap: 7rem;
+}
+.pintas {
+  grid-area: pintas;
+  @include flex-column;
+  margin-right: 4rem;
+}
 
-  }
-  .card  {
-    img{
-      height: 28rem;
-    }
-  }
+.menu-texto1{
+  margin-top: 11rem;
+  margin-bottom: 3rem;
+  text-align: center;
   
-  .contenedor-card {
-    @include flex-center;
-    margin-top: 2rem;
+}
+.menu-texto2{
+  text-align: justify;
+}
+.pintas-especiales {
+  grid-area: especiales;
+  @include flex-column;
+}
+.especiales{
+  h3{
+    @extend .menu-texto2;
   }
-  
-  .btn {
-    color: #bb3e03;
-    text-decoration: none;
+}
+.comida {
+  grid-area: comida;
+  @include flex-column;
+  margin-top: -9rem;
+}
+.comida {
+  h2{
+    @extend .menu-texto1;
   }
-  .btn:hover {
-    text-decoration: none;
-    color: beige;
+}
+.card {
+  background-color: #0c0f0a;
+  box-shadow: #0000009f 0.3rem 0.4rem 0.1rem 0.1rem;
+  transition: all 0.5s;
+  width: 50%;
+}
+.card {
+  img{
+    object-fit: cover;
   }
+}
+.card:hover{
+  @extend .card;
+  transform: scale(1.07);
+  cursor: pointer;
 
-  
+}
+.card  {
+  img{
+    height: 28rem;
+  }
+}
+
+.contenedor-card {
+  @include flex-center;
+  margin-top: 2rem;
+}
+
+.btn {
+  color: #bb3e03;
+  text-decoration: none;
+}
+.btn:hover {
+  text-decoration: none;
+  color: beige;
+}
+
   

@@ -1,34 +1,34 @@
 /*ubicacion*/
 
 .ubicacion-fondo {
-    background-image: url("../fotos/ubicacion.jpg");
-    @include imagen-posicion;
-  }
-  .ubicacion-padre {
-    display: grid;
-    grid-template-areas:
-      "texto texto texto"
-      "horario horario horario"
-      "mapa mapa mapa";
-  
-    grid-template-columns: repeat(3, 1fr);
-    margin: 2rem 1rem;
-  }
-  .texto1-ubicacion {
-    grid-area: texto;
-    @include flex-center;
-    text-decoration: underline;
-    color: #bb3e03;
-    margin-top: 7rem;
-  }
-  .horarios {
-    grid-area: horario;
-    @include flex-center;
-    margin: 2.5rem 2.5rem;
-  }
-  .mapa {
-    grid-area: mapa;
-    @include flex-center;
-    margin: 2rem 2rem;
-  }
+  background-image: url("../fotos/ubicacion.jpg");
+  @include imagen-posicion;
+}
+.ubicacion-padre {
+  display: grid;
+  grid-template-areas:
+    "texto texto texto"
+    "horario horario horario"
+    "mapa mapa mapa";
+
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 1rem;
+}
+.texto1-ubicacion {
+  grid-area: texto;
+  @include flex-center;
+  text-decoration: underline;
+  color: #bb3e03;
+  margin-top: 7rem;
+}
+.horarios {
+  grid-area: horario;
+  @include flex-center;
+  margin: 2.5rem 2.5rem;
+}
+.mapa {
+  grid-area: mapa;
+  @include flex-center;
+  margin: 2rem 2rem;
+}
   
