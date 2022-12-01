@@ -16,7 +16,8 @@
     <link rel="shortcut icon" href="../fotos/favicon-pirca.png">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--ANIMACION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Pirca | Menú</title>
 </head>
 <body>
@@ -48,38 +49,38 @@
     </header>
     </header>
 <!--CONTENIDO DEL MENU-->
-<div class="contenedorMenu-grid animate__fadeInUp animate__animated">
+<div class="contenedorMenu-grid">
   <section class="pintas">
-    <div class="menu-texto1">
+    <div class="menu-texto1" data-aos="fade-down">
       <h2>NUESTRAS CERVEZAS</h2>
     </div>
-    <div class="menu-texto2"><!--la idea es que las imagenes se deslicen-->
+    <div class="menu-texto2" data-aos="fade-down">
       <h3>TRADICIONALES</h3>
       <p>Como el trekking de los domingos y la selfie desde el cerro. Como todo lo que nos gusta hacer aunque lo hayamos hecho mil veces.
           El carácter de las Pircas tradicionales es así: fuerte como nuestras costumbres y cautivante como nuestras montañas. 🏔️🍺
       </p>
     </div>
-    <div class="carrusel-tradicionales">
-      <div class="contenedor-card">
-        <div class="card" style="width: 25rem;">
-          <img src="../fotos/tradicionales.webp" class="card-img-top" alt="tradicionales">
-          <div class="card-body">
-            <p class="card-text">Estas son nuestras cervezas tradicionales conseguilas a 400$ la pinta.</p>
-          </div>
+
+    <div class="contenedor-card" data-aos="flip-left">
+      <div class="card" style="width: 25rem;">
+        <img src="../fotos/tradicionales.webp" class="card-img-top" alt="tradicionales">
+        <div class="card-body">
+          <p class="card-text">Estas son nuestras cervezas tradicionales conseguilas a 400$ la pinta.</p>
         </div>
+      </div>
     </div>  
-    </div>
+    
   </section>
 
   <section class="pintas-especiales">
-    <div class="especiales">
+    <div class="especiales" data-aos="fade-left">
       <h3>ESPECIALES</h3>
       <p>
       Aquí viene lo bueno jóvenes 🤤 Nuestras Pircas especiales no se parecen a otra cerveza que hayas probado. Incluso algunas volvieron con medallas de uno que otro concurso. Pensadas para valientes y hechas por aventurerxs. Si todavía no tenés tu especial preferida ¿Te animás a elegir una?
       </p>
     </div>
 
-    <div class="contenedor-card">
+    <div class="contenedor-card" data-aos="flip-right">
       <div class="card" style="width: 25rem;">
         <img src="../fotos/especiales.webp" class="card-img-top" alt="especiales">
         <div class="card-body">
@@ -93,12 +94,12 @@
 
 
   <section class="comida">
-    <div class="texto-comida">
+    <div class="texto-comida" data-aos="fade-right">
         <h2>MORFI</h2>
         <p>No es lo mismo el otoño en Mendoza ni la billetera un 31 💸😬 Por eso te esperamos con las promos de siempre 👌🏻.Mira nuestra carta</p>
     </div>
     
-    <div class="contenedor-card">
+    <div class="contenedor-card" data-aos="flip-down">
       <div class="card " style="width: 25rem;">
         <img src="../fotos/morfi4.webp" class="card-img-top" alt="morfi3">
         <div class="card-body">
@@ -110,11 +111,14 @@
     </div>
     
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<!--ANIMACIONES SCRIPTS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    new WOW().init();
+  AOS.init({
+    duration: 1500
+  });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 <!--FOOTER-->
     <footer class="footer">

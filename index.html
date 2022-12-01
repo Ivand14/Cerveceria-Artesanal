@@ -22,10 +22,7 @@
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@300;400&display=swap" rel="stylesheet">
     <!--ANIMACION-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Pirca | Inicio</title>
   </head>
   <body>
@@ -79,7 +76,7 @@
           </div>
         </nav>
       </header>
-      <main class="contenedor-main">
+      <main class="contenedor-main" data-aos="fade-down">
         <div class="texto-main">
           <h2
             class="animate__animated animate__bounce animate__fadeIn texto1-main"
@@ -106,12 +103,14 @@
   
       </main>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+<!--ANIMACIONES SCRIPTS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1500
+      });
+    </script>
+    <!--BOOTSTRAP-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"

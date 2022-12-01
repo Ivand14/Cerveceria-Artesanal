@@ -17,7 +17,7 @@
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@300;400&display=swap" rel="stylesheet">
     <!--ANIMACION-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Pirca | Nosotros</title>
 </head>
 <body>
@@ -48,44 +48,54 @@
     </nav>
   </header>
 <!--CONTENIDO-->
-<section id="nosotros-contenido animate__fadeInUp animate__animated">
-    <div class="nosotros animate__fadeInUp animate__animated">
+<section id="nosotros-contenido ">
+    <div class="nosotros " data-aos="fade-up">
         <h2>SOBRE NOSOTROS</h2>
         <p> Fundada en 2005 , Pirca es una cervecería artesanal, 
             donde elaboramos nuestra propia cerveza. 
             Contamos con dos espacios para compartir con amigos y familia.
         </p>
     </div>    
-    <div class="staff animate__fadeInUp animate__animated">
-        <div class="imagenes-staff">
 
-        <img src="../fotos/staff1.webp" alt="staff1">  
-        <img src="../fotos/staff2.webp" alt="staff2">
-        <img src="../fotos/staff3.webp" alt="staff3">
-        <img src="../fotos/staff4.webp" alt="staff4">
+    <div class="staff">
+      <div  data-aos="fade-right">
+        <img src="../fotos/staff1.webp" alt="staff1" >  
+        <img src="../fotos/staff2.webp" alt="staff2" >
+        <img src="../fotos/staff3.webp" alt="staff3" >
+        <img src="../fotos/staff4.webp" alt="staff4" >
+      </div>
+      
+      <div data-aos="fade-left">
         <img src="../fotos/staff5.webp" alt="staff4">
         <img src="../fotos/staff6.webp" alt="staff4">
         <img src="../fotos/staff7.webp" alt="staff4">
         <img src="../fotos/staff8.webp" alt="staff4">
+      </div>
         
-        </div>
     </div>
+    
 
-    <div class="fabricacion animate__fadeInUp animate__animated">
+    <div class="fabricacion " data-aos="fade-up">
         <h2>FABRICACIÓN</h2>
         <p>Elaboramos cerveza artesanal, todo el proceso es realizado de manera personalizada y manual. 
             Cada etapa de la elaboración es estrictamente controlada y verificada por el equipo de la fábrica.
             Seleccionamos cada ingrediente, cuidamos que nuestra cerveza tenga su marca personal, 
             cada estilo se diferencie en su aroma y sabor. Que sea especial.</p>
     </div>
-    <!--CARRUSEL-->
-    <div class="imagen-fabrica animate__fadeInUp animate__animated">
+    <div class="imagen-fabrica " data-aos="fade-up">
       <img src="../fotos/cerveza-carrusel.webp" alt="cerveza-carrusel">
     </div>
     </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<!--ANIMACIONES SCRIPTS-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500
+  });
+</script>
+
 </body>
 <!--FOOTER-->
     <footer class="footer">

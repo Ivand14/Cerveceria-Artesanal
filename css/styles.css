@@ -157,11 +157,22 @@ h4 {
   margin-top: 1rem;
 }
 
-.imagenes-staff {
+.staff {
   display: flex;
-  justify-content: space-around;
-  margin: 4rem;
+  justify-content: center;
+  align-content: space-around;
   flex-wrap: wrap;
+}
+.staff img {
+  border-radius: 2rem;
+  height: 20rem;
+  width: 24rem;
+  margin: 3rem 3rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.staff img:hover {
+  transform: scale(1.25);
 }
 
 .staff1 p {
@@ -173,14 +184,6 @@ h4 {
   opacity: 0;
 }
 
-.staff img {
-  border-radius: 2rem;
-  height: 20rem;
-  width: 24rem;
-  align-content: space-around;
-  margin: 3rem 3rem;
-}
-
 .contenedor-staff1 {
   overflow: hidden;
 }
@@ -190,6 +193,10 @@ h4 {
   justify-content: center;
 }
 
+.imagen-fabrica {
+  transition: all 1s;
+  cursor: pointer;
+}
 .imagen-fabrica img {
   height: 30rem;
   width: 30rem;
@@ -197,32 +204,8 @@ h4 {
   transition: all 300ms;
   border-radius: 1rem;
 }
-
-.imagen-fabrica {
-  transition: all 1s;
-}
-
 .imagen-fabrica img:hover {
   transform: scale(1.25);
-}
-
-/*ANIMACION STAFF*/
-.staff {
-  transition: all 1s;
-}
-
-.imagenes-staff {
-  transition: all 300ms;
-}
-
-.imagenes-staff img:hover {
-  transform: scale(1.25);
-}
-
-/*ANIMACION FABRICACION*/
-.animate__fadeInUp {
-  animation-duration: 1s;
-  animation-delay: 0.1s;
 }
 
 .img {
