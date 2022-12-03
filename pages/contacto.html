@@ -16,7 +16,8 @@
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@300;400&display=swap" rel="stylesheet">
     <!--ANIMACION-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--TITULO-->
     <title>Pirca | Contacto</title>
 </head>
 <body>
@@ -46,14 +47,14 @@
         </div>
         </nav>
       </header>
-    <section  class="contacto">
+    <section  class="contacto" data-aos="zoom-out-down">
     <!--TEXTO-->
-        <div class="texto-contacto" data-aos="fade-up-right">
+        <div class="texto-contacto">
             <h2>CONTACTO</h2> 
             <p>Si queres reservar o que te enviemos la chopera a tu evento <br> no dudes en escribirnos dejando tus datos y el servicio que deseas.</p>
         </div>
     <!--FORMULARIO-->
-        <form class="formulario" data-aos="fade-up-left">
+        <form class="formulario">
         <div class="contenido">
             <label for="nombre">Nombre</label>
             <br>
@@ -75,12 +76,11 @@
     </section>
 </div>
 <!--ANIMACIONES SCRIPTS-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1500
-  });
+  AOS.init({duration:1000});
 </script>
+<!--BS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 <!--FOOTER-->
