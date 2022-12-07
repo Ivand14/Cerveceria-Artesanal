@@ -29,6 +29,7 @@
   background: #0c0f0a;
   color: #bb3e03;
 }
+
 .texto-contacto {
   text-align: center;
   @include flex-column;
@@ -47,7 +48,10 @@
     font-size: 2rem;
   }
 }
-
+.contenido:has(input:required) label:after{
+  content: "*";
+  color: red;
+}
 .boton-contacto{
   @include centrado;
 }
